@@ -1,1 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(48, 46, 46);
+}
+
+
+.hero-section {
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: whitesmoke;
+  background-image: url(https://magazine.techis.io/wp-content/uploads/2022/10/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hero-text:hover{
+  color: greenyellow;
+}
+
+
+.black-box-section {
+  background-color: #000;
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.black-box-section span {
+  font-size: 96px;
+}
+
+.card-container-section {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  grid-gap: 30px;
+  margin: 50px;
+  align-items: center;
+}
+
+.card {
+  background-color: rgb(75, 72, 72);
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 3px 7px lightcyan;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 9px 11px greenyellow;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-content {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.card-content p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 6px;
+  color: white;
+}
+
+.card-content p:hover {
+  color: greenyellow;
+}
+
+
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 1.5rem;
+}
+
+.contact-section {
+  width: 100%;
+  aspect-ratio: 3/1;
+  background-color: rgba(22, 255, 22, 0.563);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.about-section {
+  width: 100%;
+  aspect-ratio: 3/1;
+  background-color: rgb(231, 154, 154);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.bottom-section h2 {
+  margin: 1.3rem 0;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  .hero-section {
+    min-height: 50vh;
+    background-size: cover;
+  }
+
+  .hero-text{
+    font-size: small;
+  }
+
+  .black-box-section {
+    font-size: 24px;
+  }
+
+  .card-container-section {
+  flex-direction: column;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+}
